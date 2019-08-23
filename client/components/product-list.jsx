@@ -16,15 +16,13 @@ export default class ProductList extends React.Component {
 
   getProducts() {
     fetch('/api/products.php')
-      .then(res => res.json())
+      .then(res => { return res.json(); })
       .then(res => {
-        var allProducts = res;
-        this.setState({ products: allProducts });
+        this.setState({ products: res });
       });
   }
 
   render() {
-
     var newItems = this.state.products.map(product =>
       <div key={product.id} className='col-md-4 d-flex align-items-stretch'>
         <ProductListItem
