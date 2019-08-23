@@ -9,7 +9,7 @@ export default class ProductDetails extends React.Component {
   }
 
   componentDidMount() {
-    fetch('/api/products.php?id=1')
+    fetch(`/api/products.php?id={this.props.params}`)
       .then(res => res.json())
       .then(res => {
         var productDetails = res;
@@ -30,6 +30,9 @@ export default class ProductDetails extends React.Component {
       var longDescription = productInfoObj.longDescription;
       return (
         <React.Fragment>
+          <button type="button" className="btn btn-success"
+            onClick={() => { this.props.view('catalog', {}); }}>
+            Back to Catalog</button>
           <h1>{name}</h1>
           <div>{price}</div>
           <img src={image} alt="image of product"/>

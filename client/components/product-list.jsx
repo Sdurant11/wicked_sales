@@ -24,7 +24,9 @@ export default class ProductList extends React.Component {
 
   render() {
     var newItems = this.state.products.map(product =>
-      <div key={product.id} className='col-md-4 d-flex align-items-stretch'>
+      <div onClick={() => {
+        this.props.view('description', { id: product.id });
+      }} key={product.id} className='col-md-4 d-flex align-items-stretch'>
         <ProductListItem
           name={product.name}
           price={product.price}
