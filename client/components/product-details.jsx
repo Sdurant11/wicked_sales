@@ -30,14 +30,26 @@ export default class ProductDetails extends React.Component {
       var longDescription = productInfoObj.longDescription;
       return (
         <React.Fragment>
-          <button type="button" className="btn btn-success"
-            onClick={() => { this.props.view('catalog', {}); }}>
-            Back to Catalog</button>
-          <h1>{name}</h1>
-          <div>{price}</div>
-          <img src={image} alt="image of product"/>
-          <div>{shortDescription}</div>
-          <div>{longDescription}</div>
+          <div className="container">
+            <div className="row">
+              <button type="button" className="btn btn-success m-3"
+                onClick={() => { this.props.view('catalog', {}); }}>
+                Back to Catalog</button>
+            </div>
+            <div className="row">
+              <div className="col-8">
+                <img className="mw-100" src={image} alt="image of product" />
+              </div>
+              <div className="col-4">
+                <h1>{name}</h1>
+                <div>{price}</div>
+                <div>{shortDescription}</div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="m-3">{longDescription}</div>
+            </div>
+          </div>
         </React.Fragment>
       );
     }
