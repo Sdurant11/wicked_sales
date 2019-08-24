@@ -11,13 +11,22 @@ require_once('db_connection.php');
     die('Connect Error: ' . mysqli_connect_error());
   }
 
-$query = "SELECT * FROM `products`";
+if (empty($_GET['id'])) {
+  $whereClause = "";
+} else {
+    if (is_numeric($_GET['id']) ){
+      $whereClause = " WHERE id={$_GET['id']} ";
+    } else {
+      die("Id needs to be a number");
+    }
+}
+
+$query = "SELECT * FROM `products`" . $whereClause;
 
 $result = mysqli_query($conn, $query);
 
 if (!$result) {
-  printf("Connect failed: %s\n", mysqli_connect_error());
-  exit();
+  throw new Exception("Connect failed: ". mysqli_connect_error());
 }
 
 $output = [];
