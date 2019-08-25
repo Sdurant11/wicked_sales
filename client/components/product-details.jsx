@@ -49,6 +49,9 @@ export default class ProductDetails extends React.Component {
             <div className="row">
               <div className="m-3">{longDescription}</div>
             </div>
+            <button type="button" className="btn btn-success" onClick={() => { this.props.add(productInfoObj); }}>
+              Add to Cart
+            </button>
           </div>
         </React.Fragment>
       );

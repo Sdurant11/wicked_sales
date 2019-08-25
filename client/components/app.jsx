@@ -10,9 +10,16 @@ export default class App extends React.Component {
       view: {
         name: 'catalog',
         params: {}
-      }
+      },
+      cart: []
     };
     this.setView = this.setView.bind(this);
+    this.getCartItems = this.getCartItems.bind(this);
+    this.addToCart = this.addToCart.bind(this);
+  }
+
+  componentDidMount() {
+    this.getCartItems();
   }
 
   setView(name, params) {
@@ -24,14 +31,34 @@ export default class App extends React.Component {
     });
   }
 
+  getCartItems() {
+    fetch('/api/cart.php')
+      .then(res => res.json())
+      .then(res => this.setState({ cart: res }));
+  }
+
+  addToCart(product) {
+    var req = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(product)
+    };
+    fetch('/api/cart.php', req)
+      .then(res => res.json())
+      .then(res => {
+        var itemsInCart = this.state.cart.concat(res);
+        this.setState({ cart: itemsInCart });
+      });
+  }
+
   render() {
     return (
       <React.Fragment>
-        <Header />
+        <Header cart={this.state.cart}/>
         {this.state.view.name === 'catalog' ? (
           <ProductList view={this.setView} />
         ) : (
-          <ProductDetails view={this.setView} params={this.state.view.params}/>
+          <ProductDetails view={this.setView} params={this.state.view.params} add={this.addToCart}/>
         )}
       </React.Fragment>
     );
