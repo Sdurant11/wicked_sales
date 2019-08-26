@@ -40,7 +40,11 @@ function CartSummary(props) {
           onClick={() => { props.view('catalog', {}); }}>Back to Catalog</button>
         <h2>Cart Summary</h2>
         {allCartItems}
-        <div className="mt-2">Item Total: {totalPrice}</div>
+        <div className="mt-2 d-inline-block mr-3">Item Total: {totalPrice}</div>
+        <button type="button d-inline-block" className="btn btn-success"
+          onClick={() => { props.view('checkout', {}); }}>
+            Checkout
+        </button>
       </div>
     </React.Fragment>
   );
