@@ -9,3 +9,12 @@
 #cartNum{
   font-size: 1.5rem;
 }
+
+.cartItemRow{
+  height: 20vh;
+}
+
+.itemImage{
+  height:18vh;
+  width: auto;
+}
