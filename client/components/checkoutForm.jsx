@@ -18,7 +18,8 @@ export default class CheckoutForm extends React.Component {
     this.setState(newState);
   }
 
-  handleSubmit() {
+  handleSubmit(event) {
+    event.preventDefault();
     var customerInfo = {
       name: this.state.name,
       creditCard: this.state.creditCard,
@@ -37,7 +38,7 @@ export default class CheckoutForm extends React.Component {
 
   render() {
     return (
-      <form className="p-4">
+      <form className="p-4" onSubmit={this.handleSubmit}>
         <div className="form-group">
           <label>Full Name:</label>
           <input type="text" className="form-control" name="name" onChange={this.handleChange} required/>
@@ -54,8 +55,7 @@ export default class CheckoutForm extends React.Component {
           onClick={() => { this.props.view('catalog', {}); }}>
             Continue Shopping
         </button>
-        <button type="submit" className="btn btn-danger btn-lg float-right"
-          onSubmit={this.handleSubmit}>
+        <button type="submit" className="btn btn-danger btn-lg float-right">
             Place Order
         </button>
       </form>
