@@ -6,7 +6,8 @@ function Header(props) {
       <nav className="navbar navbar-light bg-light">
         <h1 id="title" className="navbar-brand ml-5">Wicked Sales</h1>
         <div className="m-1" id="cartNum">
-          <i className="fas fa-shopping-cart m-1"></i>
+          <i className="fas fa-shopping-cart m-1"
+            onClick={() => { props.view('cart', {}); }}></i>
           {props.cart.length}
         </div>
 
