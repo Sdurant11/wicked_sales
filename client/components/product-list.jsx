@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductListItem from './product-list-item';
+import CarouselHeader from './carousel.jsx';
 
 export default class ProductList extends React.Component {
   constructor(props) {
@@ -37,6 +38,9 @@ export default class ProductList extends React.Component {
     );
     return (
       <div className="container">
+        <div className="row">
+          <CarouselHeader />
+        </div>
         <div className= 'row'>
           {newItems}
         </div>
