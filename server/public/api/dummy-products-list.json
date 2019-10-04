@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Shake Weight",
+    "name": "Crown of Thorns",
     "price": 2999,
-    "image": "https://bit.ly/2JtVNE6",
-    "shortDescription": "Dynamic Inertia technology ignites muscles in arms, shoulders, and chest."
+    "image": "https://i.etsystatic.com/19437947/r/il/35bdf1/1982147181/il_1588xN.1982147181_78wp.jpg",
+    "shortDescription": "..."
   },
   {
     "id": 2,
-    "name": "ShamWow",
+    "name": "Halo Headpiece",
     "price": 2595,
-    "image": "https://bit.ly/2w9C3Nm",
-    "shortDescription": "It's like a chamois, towel, and sponge, all in one! Soaks up to 10x it's weight in any liquid!"
+    "image": "https://i.etsystatic.com/19437947/r/il/2678a9/1948529820/il_794xN.1948529820_5wni.jpg",
+    "shortDescription": "..."
   },
   {
     "id": 3,
-    "name": "Snuggie",
+    "name": "Red Wool Hooded Cloak",
     "price": 2900,
-    "image": "https://bit.ly/2LVHYAk",
-    "shortDescription": "Super-Soft Fleece with pockets! One Size fits all Adults! Keeps you Warm & Your Hands-Free!"
+    "image": "https://i.etsystatic.com/5961957/r/il/080c6c/1893148038/il_794xN.1893148038_m2to.jpg",
+    "shortDescription": "..."
   },
   {
     "id": 4,
-    "name": "Wax Vac",
+    "name": "Bat Wings",
     "price": 999,
-    "image": "https://bit.ly/2EjCU2a",
-    "shortDescription": "Gentle way to remove ear wax. Safe and hygienic. Reduces the risk of painful infections."
+    "image": "https://i.etsystatic.com/5961957/r/il/63285e/1104805251/il_1588xN.1104805251_8mf4.jpg",
+    "shortDescription": "..."
   },
   {
     "id": 5,
-    "name": "Ostrich Pillow",
+    "name": "Dragon Horns",
     "price": 9900,
-    "image": "https://bit.ly/2VD80b8",
-    "shortDescription": "Create your own snugly space in the world and feel-good anywhere with the ultimate cocoon pillow."
+    "image": "https://i.etsystatic.com/5961957/r/il/10720a/1503275994/il_1588xN.1503275994_ahsv.jpg",
+    "shortDescription": "..."
   },
   {
     "id": 6,
-    "name": "Tater Mitts",
+    "name": "Grey Witch Hat",
     "price": 830,
-    "image": "https://bit.ly/2w9EmzO",
-    "shortDescription": "8 Seconds is All You Need with Tater Mitts Quickly and easily prepare all your favorite potato dishes with Tater Mitts."
+    "image": "https://i.etsystatic.com/5961957/r/il/25a5c3/2011886528/il_1588xN.2011886528_phw3.jpg",
+    "shortDescription": "..."
   }
 ]
