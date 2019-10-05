@@ -41,9 +41,9 @@ export default class ProductDetails extends React.Component {
                 <img className="mw-100" src={image} alt="image of product" />
               </div>
               <div className="col-4">
-                <h1>{name}</h1>
-                <div>{price}</div>
-                <div>{shortDescription}</div>
+                <h2>{name}</h2>
+                <div className="detailsText">{price}</div>
+                <div className="detailsText">{shortDescription}</div>
               </div>
             </div>
             <div className="row">

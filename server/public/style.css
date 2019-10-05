@@ -1,3 +1,7 @@
+body{
+  font-family: 'IM Fell DW Pica', serif;
+}
+
 .fa-shopping-cart:before{
   font-size: 30px;
 }
@@ -53,4 +57,13 @@
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 1
+}
+
+.detailsText{
+  font-family: 'Crimson Text', serif;
+}
+
+.carouselHeader{
+  display: block;
+  width: 100%;
 }

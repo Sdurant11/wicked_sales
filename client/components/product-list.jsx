@@ -38,7 +38,7 @@ export default class ProductList extends React.Component {
     );
     return (
       <div className="container">
-        <div className="row">
+        <div className="row carouselHeader">
           <CarouselHeader />
         </div>
         <div className= 'row'>
