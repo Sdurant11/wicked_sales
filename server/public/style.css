@@ -27,7 +27,8 @@ body{
 .itemCard{
   width: 250px;
   height: 350px;
-  cursor: pointer
+  cursor: pointer;
+  border: none;
 }
 
 .overlay {
