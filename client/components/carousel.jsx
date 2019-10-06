@@ -2,21 +2,18 @@ import React from 'react';
 
 function CarouselHeader() {
   return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" className="carousel slide w-100" data-ride="carousel">
       <ol className="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img className="d-block w-100" src="https://i.etsystatic.com/5961957/r/il/682e90/1138774732/il_794xN.1138774732_kjj3.jpg" alt="First slide" />
+      <div className="carousel-inner mh-100">
+        <div className="carousel-item active backgroundImage" style={{ backgroundImage: 'url("https://scene360.com/wp-content/uploads/2015/11/american-ghoul-06.jpg")', backgroundPosition: '50% 90%' }}>
         </div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src="https://i.etsystatic.com/5961957/r/il/8df99f/1850225009/il_1588xN.1850225009_abg8.jpg" alt="Second slide" />
+        <div className="carousel-item backgroundImage" style={{ backgroundImage: 'url("https://i.etsystatic.com/10351384/r/il/6619f6/1594264668/il_1588xN.1594264668_n8rq.jpg")', backgroundPosition: '50% 20%' }}>
         </div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src="https://i.etsystatic.com/5961957/r/il/3b96dc/1456545957/il_794xN.1456545957_6g10.jpg" alt="Third slide" />
+        <div className="carousel-item backgroundImage" style={{ backgroundImage: 'url("https://www.darkbeautymag.com/wp-content/uploads/2014/02/Pages-from-ISSUE-29-Print-Full-5-1.jpg")', backgroundPosition: '50% 20%' }}>
         </div>
       </div>
       <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
