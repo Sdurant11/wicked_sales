@@ -46,5 +46,21 @@
     "image": "https://i.etsystatic.com/5961957/r/il/25a5c3/2011886528/il_1588xN.2011886528_phw3.jpg",
     "shortDescription": "...",
     "productType": "headWear"
+  },
+  {
+    "id": 7,
+    "name": "Crow's Foot Necklace",
+    "price": 999,
+    "image": "https://i.etsystatic.com/10049532/r/il/398a77/1930981597/il_1588xN.1930981597_tngc.jpg",
+    "shortDescription": "...",
+    "productType": "accessories"
+  },
+  {
+    "id": 8,
+    "name": "Black Witch Dress",
+    "price": 4500,
+    "image": "https://i.etsystatic.com/17954328/r/il/ac2923/1611740515/il_1588xN.1611740515_j7yu.jpg",
+    "shortDescription": "...",
+    "productType": "clothing"
   }
 ]
