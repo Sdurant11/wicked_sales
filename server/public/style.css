@@ -1,3 +1,8 @@
+body{
+  font-family: 'IM Fell DW Pica', serif;
+  background-color: rgb(208, 212, 213)
+}
+
 .fa-shopping-cart:before{
   font-size: 30px;
 }
@@ -22,7 +27,8 @@
 .itemCard{
   width: 250px;
   height: 350px;
-  cursor: pointer
+  cursor: pointer;
+  border: none;
 }
 
 .overlay {
@@ -53,4 +59,22 @@
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 1
+}
+
+.detailsText{
+  font-family: 'Crimson Text', serif;
+}
+
+.carouselHeader{
+  height: 350px;
+}
+
+.backgroundImage{
+  height:85vh;
+  background-size: cover;
+}
+
+
+.pointer{
+  cursor: pointer;
 }

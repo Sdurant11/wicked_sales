@@ -37,14 +37,14 @@ export default class ProductList extends React.Component {
       </div>
     );
     return (
-      <div className="container">
-        <div className="row">
-          <CarouselHeader />
+      <React.Fragment>
+        <CarouselHeader />
+        <div className="container">
+          <div className= 'row mt-5'>
+            {newItems}
+          </div>
         </div>
-        <div className= 'row'>
-          {newItems}
-        </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
