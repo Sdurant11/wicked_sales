@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Crown of Thorns",
-    "price": 2999,
+    "price": 9000,
     "image": "https://i.etsystatic.com/19437947/r/il/35bdf1/1982147181/il_1588xN.1982147181_78wp.jpg",
     "shortDescription": "...",
     "productType": "headWear"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Halo Headpiece",
-    "price": 2595,
+    "price": 12000,
     "image": "https://i.etsystatic.com/19437947/r/il/2678a9/1948529820/il_794xN.1948529820_5wni.jpg",
     "shortDescription": "...",
     "productType": "headWear"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Bat Wings",
-    "price": 999,
+    "price": 5000,
     "image": "https://i.etsystatic.com/5961957/r/il/63285e/1104805251/il_1588xN.1104805251_8mf4.jpg",
     "shortDescription": "...",
     "productType": "accessories"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "name": "Grey Witch Hat",
-    "price": 830,
+    "price": 2500,
     "image": "https://i.etsystatic.com/5961957/r/il/25a5c3/2011886528/il_1588xN.2011886528_phw3.jpg",
     "shortDescription": "...",
     "productType": "headWear"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "name": "Crow's Foot Necklace",
-    "price": 999,
+    "price": 2800,
     "image": "https://i.etsystatic.com/10049532/r/il/398a77/1930981597/il_1588xN.1930981597_tngc.jpg",
     "shortDescription": "...",
     "productType": "accessories"
