@@ -40,7 +40,7 @@ export default class AccessoriesList extends React.Component {
       <React.Fragment>
         <div className="container">
           <div className="row">
-            <h2 className="mx-auto">Clothing</h2>
+            <h2 className="mx-auto">Accessories</h2>
           </div>
           <div className='row mt-5'>
             {accessoriesCards}

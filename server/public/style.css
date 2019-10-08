@@ -29,16 +29,22 @@ body{
   height: 350px;
   cursor: pointer;
   border: none;
+  background-color: rgb(208, 212, 213)
+}
+
+.itemCardFrame{
+  background-image: url('./images/frame.png');
+  background-size: contain;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
+  /* top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  right: 0; */
+  height: 98%;
+  width: 98%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgb(120, 127, 129);
