@@ -5,6 +5,8 @@ import ProductDetails from './product-details';
 import CartSummary from './cart-summary';
 import CheckoutForm from './checkoutForm';
 import HeadWearList from './headwear-list';
+import ClothingList from './clothing-list';
+import AccessoriesList from './accessories-list';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -91,6 +93,10 @@ export default class App extends React.Component {
       viewedPage = <CheckoutForm onSubmit={this.placeOrder} view={this.setView}/>;
     } else if (this.state.view.name === 'headWear') {
       viewedPage = <HeadWearList view={this.setView} params={this.state.view.params} />;
+    } else if (this.state.view.name === 'clothing') {
+      viewedPage = <ClothingList view={this.setView} params={this.state.view.params} />;
+    } else if (this.state.view.name === 'accessories') {
+      viewedPage = <AccessoriesList view={this.setView} params={this.state.view.params} />;
     }
 
     return (

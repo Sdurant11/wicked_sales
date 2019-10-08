@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductListItem from './product-list-item';
 
-export default class HeadWearList extends React.Component {
+export default class AccessoriesList extends React.Component {
 
   constructor(props) {
     super(props);
@@ -22,8 +22,8 @@ export default class HeadWearList extends React.Component {
   }
 
   render() {
-    const headWearItems = this.state.products.filter(item => item.productType === 'headWear');
-    const headWearCards = headWearItems.map(product =>
+    const accessoriesItems = this.state.products.filter(item => item.productType === 'accessories');
+    const accessoriesCards = accessoriesItems.map(product =>
       <div onClick={() => {
         this.props.view('description', { id: product.id });
       }} key={product.id} className='col-md-4 d-flex align-items-stretch'>
@@ -40,10 +40,10 @@ export default class HeadWearList extends React.Component {
       <React.Fragment>
         <div className="container">
           <div className="row">
-            <h2 className="mx-auto">Headwear</h2>
+            <h2 className="mx-auto">Clothing</h2>
           </div>
           <div className='row mt-5'>
-            {headWearCards}
+            {accessoriesCards}
           </div>
         </div>
       </React.Fragment>
