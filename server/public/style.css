@@ -33,8 +33,8 @@ body{
 }
 
 .itemCardFrame{
-  background-image: url('./images/frame.png');
-  background-size: contain;
+  height: 100%;
+  position: absolute;
 }
 
 .overlay {
@@ -43,8 +43,8 @@ body{
   bottom: 0;
   left: 0;
   right: 0; */
-  height: 98%;
-  width: 98%;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgb(120, 127, 129);
