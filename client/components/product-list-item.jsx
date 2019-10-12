@@ -1,11 +1,19 @@
 import React from 'react';
 
 function ProductListItem(props) {
-  var price = props.price;
+  let price = props.price;
   price = '$' + (price / 100).toFixed(2);
+  const productImage = props.image;
+  const styleObj = {
+    height: '100%',
+    backgroundImage: `url(${productImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    overFlow: 'hidden'
+  };
   return (
-    <div className="card mb-5 mx-auto d-flex itemCard shadow">
-      <img className="card-img rounded-0" style={{ height: '100%' }} src={props.image} alt="Card image cap"></img>
+    <div className="card mb-5 mx-auto d-flex itemCard">
+      <div className="rounded-0" style={ styleObj }></div>
       <div className="overlay">
         <div className="cardText">
           <div>{props.name}</div>

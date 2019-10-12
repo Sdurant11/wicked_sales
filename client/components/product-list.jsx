@@ -40,6 +40,9 @@ export default class ProductList extends React.Component {
       <React.Fragment>
         <CarouselHeader />
         <div className="container">
+          <div className='row mt-5'>
+            <h2 className="mx-auto">Featured Items</h2>
+          </div>
           <div className= 'row mt-5'>
             {newItems}
           </div>
