@@ -4,7 +4,7 @@ body{
 }
 
 .fa-shopping-cart:before{
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #title{
@@ -69,10 +69,6 @@ body{
 
 .detailsText{
   font-family: 'Crimson Text', serif;
-}
-
-.carouselHeader{
-  height: 350px;
 }
 
 .backgroundImage{
