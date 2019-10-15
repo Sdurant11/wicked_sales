@@ -7,13 +7,15 @@ function CartSummaryItem(props) {
   price = '$' + (price / 100).toFixed(2);
   return (
     <React.Fragment>
-      <div className="col-sm">
+      <div>
         <img src={props.item.image} alt="item image" className="col itemImage mt-1"></img>
       </div>
-      <div className="col font-weight-bold">
-        {props.item.name}
-        <div className="font-weight-light">
-          {price}
+      <div className="mx-auto">
+        <div className="font-weight-bold">
+          {props.item.name}
+          <div className="font-weight-light">
+            {price}
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -31,14 +33,14 @@ function CartSummary(props) {
         totalPrice = '$' + (totalPrice / 100).toFixed(2);
 
         var allCartItems = contextValue.cartArray.map(product =>
-          <div className="cartItemRow row border border-secondary rounded my-2" key={product.id}>
+          <div className="cartItemRow row border border-secondary rounded my-2 d-flex" key={product.id}>
             <CartSummaryItem item={product} />
           </div>
         );
         return (
           <React.Fragment>
             <div className="container">
-              <h2>Cart Summary</h2>
+              <h3>Cart Summary</h3>
               {allCartItems}
               <div className="mt-2 d-inline-block mr-3">Item Total: {totalPrice}</div>
               <Link to="/checkout">

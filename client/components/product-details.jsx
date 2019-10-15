@@ -28,7 +28,6 @@ export default class ProductDetails extends React.Component {
       var price = '$' + (productInfoObj.price / 100).toFixed(2);
       var image = productInfoObj.image;
       var shortDescription = productInfoObj.shortDescription;
-      var longDescription = productInfoObj.longDescription;
       return (
         <React.Fragment>
           <div className="container">
@@ -37,6 +36,9 @@ export default class ProductDetails extends React.Component {
             <div className="row">
               <div className="col-8">
                 <img className="mw-100" src={image} alt="image of product" />
+                <button type="button" className="btn btn-success my-3" onClick={() => { this.context.addToCart(productInfoObj); }}>
+                  Add to Cart
+                </button>
               </div>
               <div className="col-4">
                 <h2>{name}</h2>
@@ -44,12 +46,6 @@ export default class ProductDetails extends React.Component {
                 <div className="detailsText">{shortDescription}</div>
               </div>
             </div>
-            <div className="row">
-              <div className="m-3">{longDescription}</div>
-            </div>
-            <button type="button" className="btn btn-success" onClick={() => { this.context.addToCart(productInfoObj); }}>
-              Add to Cart
-            </button>
           </div>
         </React.Fragment>
       );
