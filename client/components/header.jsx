@@ -21,10 +21,11 @@ const Header = props => {
   return (
     <div>
       <Navbar light expand="md">
-        <NavbarBrand id="title" href="/">
-          <Link style={textStyle} to="/">
+        <NavbarBrand id="title" href="/" tag={props => {
+          return (<Link {...props} style={textStyle} to="/">
           Wicked Sales
-          </Link>
+          </Link>);
+        }}>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

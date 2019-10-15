@@ -1,4 +1,6 @@
 import React from 'react';
+import AppContext from './context';
+import { Link } from 'react-router-dom';
 
 export default class CheckoutForm extends React.Component {
   constructor(props) {
@@ -32,8 +34,8 @@ export default class CheckoutForm extends React.Component {
         shippingAddress: ''
       }
     );
-    this.props.onSubmit(customerInfo);
-    this.props.view('catalog', {});
+    this.context.placeOrder(customerInfo);
+    this.props.history.push('/');
   }
 
   render() {
@@ -51,15 +53,17 @@ export default class CheckoutForm extends React.Component {
           <label>Shipping Address</label>
           <textarea className="form-control" rows="3" name="shippingAddress" onChange={this.handleChange} required></textarea>
         </div>
-        <button type="button" className="btn btn-outline-secondary float-left"
-          onClick={() => { this.props.view('catalog', {}); }}>
+        <Link to="/">
+          <button type="button" className="btn btn-outline-secondary float-left">
             Continue Shopping
-        </button>
+          </button>
+        </Link>
         <button type="submit" className="btn btn-danger btn-lg float-right">
             Place Order
         </button>
       </form>
     );
   }
-
 }
+
+CheckoutForm.contextType = AppContext;
