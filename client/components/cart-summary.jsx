@@ -15,9 +15,6 @@ function CartSummaryItem(props) {
         <div className="font-weight-light">
           {price}
         </div>
-        <div className="font-weight-normal">
-          {props.item.shortDescription}
-        </div>
       </div>
     </React.Fragment>
   );
