@@ -1,5 +1,6 @@
 import React from 'react';
 import AppContext from './context';
+import { Link } from 'react-router-dom';
 
 function CartSummaryItem(props) {
   var price = props.item.price;
@@ -43,10 +44,11 @@ function CartSummary(props) {
               <h2>Cart Summary</h2>
               {allCartItems}
               <div className="mt-2 d-inline-block mr-3">Item Total: {totalPrice}</div>
-              <button type="button d-inline-block" className="btn btn-success"
-                onClick={() => { props.view('checkout', {}); }}>
+              <Link to="/checkout">
+                <button type="button d-inline-block" className="btn btn-success">
                 Checkout
-              </button>
+                </button>
+              </Link>
             </div>
           </React.Fragment>
         );

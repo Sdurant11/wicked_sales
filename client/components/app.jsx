@@ -112,7 +112,8 @@ export default class App extends React.Component {
   render() {
     var contextVal = {
       addToCart: this.addToCart,
-      cartArray: this.state.cart
+      cartArray: this.state.cart,
+      placeOrder: this.placeOrder
     };
 
     return (
@@ -128,6 +129,7 @@ export default class App extends React.Component {
               <Route path = "/accessories" component={AccessoriesList} />
               <Route path = "/clothing" component = {ClothingList} />
               <Route path = "/cart" component={CartSummary} />
+              <Route path = "/checkout" component={CheckoutForm} />
             </Switch>
 
           </Router>
