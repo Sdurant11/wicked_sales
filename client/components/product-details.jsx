@@ -1,4 +1,5 @@
 import React from 'react';
+import AppContext from './context';
 
 export default class ProductDetails extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class ProductDetails extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`/api/products.php?id={this.props.params.id}`)
+    fetch(`/api/products.php?id={this.props.match.params.id}`)
       .then(res => res.json())
       .then(res => {
         var productDetails = res;
@@ -49,7 +50,7 @@ export default class ProductDetails extends React.Component {
             <div className="row">
               <div className="m-3">{longDescription}</div>
             </div>
-            <button type="button" className="btn btn-success" onClick={() => { this.props.add(productInfoObj); }}>
+            <button type="button" className="btn btn-success" onClick={() => { this.context.addToCart(productInfoObj); }}>
               Add to Cart
             </button>
           </div>
@@ -59,3 +60,5 @@ export default class ProductDetails extends React.Component {
   }
 
 }
+
+ProductDetails.contextType = AppContext;
