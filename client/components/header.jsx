@@ -45,9 +45,10 @@ const Header = props => {
               </Link>
             </NavItem>
             <NavItem className=" mx-auto pointer" id="cartNum">
-              <i className="fas fa-shopping-cart m-1"
-                onClick={() => { props.view('cart', {}); }}></i>
-              {props.cart.length}
+              <Link style={textStyle} to="/cart">
+                <i className="fas fa-shopping-cart m-1"></i>
+                {props.cart.length}
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>

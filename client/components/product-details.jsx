@@ -33,9 +33,6 @@ export default class ProductDetails extends React.Component {
         <React.Fragment>
           <div className="container">
             <div className="row">
-              <button type="button" className="btn btn-success m-3"
-                onClick={() => { this.props.view('catalog', {}); }}>
-                Back to Catalog</button>
             </div>
             <div className="row">
               <div className="col-8">
