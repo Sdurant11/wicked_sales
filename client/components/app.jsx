@@ -7,6 +7,8 @@ import CheckoutForm from './checkoutForm';
 import HeadWearList from './headwear-list';
 import ClothingList from './clothing-list';
 import AccessoriesList from './accessories-list';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import AppContext from './context';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -81,7 +83,7 @@ export default class App extends React.Component {
     });
   }
 
-  render() {
+  renderView() {
     var viewedPage;
     if (this.state.view.name === 'catalog') {
       viewedPage = <ProductList view={this.setView} />;
@@ -104,6 +106,36 @@ export default class App extends React.Component {
         <Header cart={this.state.cart} view={this.setView}/>
         {viewedPage}
       </React.Fragment>
+    );
+  }
+
+  render() {
+    var contextVal = {
+      addToCart: this.addToCart,
+      cartArray: this.state.cart,
+      placeOrder: this.placeOrder
+    };
+
+    return (
+      <AppContext.Provider value={contextVal}>
+        <React.Fragment>
+
+          <Router>
+            <Header cart={this.state.cart} />
+            <Switch>
+              <Route exact path="/" component={ProductList} />
+              <Route path="/products/:id" component={ProductDetails} />
+              <Route path="/headwear" component={HeadWearList} />
+              <Route path = "/accessories" component={AccessoriesList} />
+              <Route path = "/clothing" component = {ClothingList} />
+              <Route path = "/cart" component={CartSummary} />
+              <Route path = "/checkout" component={CheckoutForm} />
+            </Switch>
+
+          </Router>
+
+        </React.Fragment>
+      </AppContext.Provider>
     );
   }
 }
