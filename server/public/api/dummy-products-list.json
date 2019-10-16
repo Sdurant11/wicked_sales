@@ -5,7 +5,7 @@
     "price": 10000,
     "image": "https://i.etsystatic.com/5575294/r/il/4010d9/1613116415/il_1588xN.1613116415_32t4.jpg",
     "shortDescription": "This unique headpiece features hand-cast resin antlers and a sculpted rose on a lightweight helm. The inside is lined with faux leather for comfort. In the back there is an elastic strap, with a metal slide to adjust. This antler crown was designed to be worn comfortably for hours.",
-    "productType": "accessories"
+    "productType": "headWear"
   },
   {
     "id": 4,
@@ -56,22 +56,6 @@
     "productType": "accessories"
   },
   {
-    "id": 8,
-    "name": "Black Witch Dress",
-    "price": 4500,
-    "image": "https://i.etsystatic.com/17954328/r/il/ac2923/1611740515/il_1588xN.1611740515_j7yu.jpg",
-    "shortDescription": "...",
-    "productType": "clothing"
-  },
-  {
-    "id": 9,
-    "name": "Resin Casted Skull Mask with Horns",
-    "price": 12000,
-    "image": "https://i.etsystatic.com/19186398/r/il/9666ab/1726144886/il_794xN.1726144886_1qtj.jpg",
-    "shortDescription": "...",
-    "productType": "accessories"
-  },
-  {
     "id": 10,
     "name": "Renaissance Witch Gown",
     "price": 14500,
@@ -85,6 +69,22 @@
     "price": 6000,
     "image": "https://i.etsystatic.com/6797040/r/il/031e41/2030074172/il_1588xN.2030074172_6eqb.jpg",
     "shortDescription": "This Delightful Witches Besom has been handmade using Lucky Heather. It has been bound with Twine and decorated with Black Agate Crystals, a Pentacle & Skull Charm and Crow Feathers with a beaded detail.",
+    "productType": "accessories"
+  },
+  {
+    "id": 8,
+    "name": "Black Witch Dress",
+    "price": 4500,
+    "image": "https://i.etsystatic.com/17954328/r/il/ac2923/1611740515/il_1588xN.1611740515_j7yu.jpg",
+    "shortDescription": "...",
+    "productType": "clothing"
+  },
+  {
+    "id": 9,
+    "name": "Resin Casted Skull Mask with Horns",
+    "price": 12000,
+    "image": "https://i.etsystatic.com/19186398/r/il/9666ab/1726144886/il_794xN.1726144886_1qtj.jpg",
+    "shortDescription": "...",
     "productType": "accessories"
   },
   {

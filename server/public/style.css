@@ -26,16 +26,12 @@ body{
 
 .itemCard{
   width: 250px;
-  height: 350px;
+  height: 300px;
   cursor: pointer;
   border: none;
   background-color: rgb(208, 212, 213)
 }
 
-.itemCardFrame{
-  height: 100%;
-  position: absolute;
-}
 
 .overlay {
   position: absolute;
