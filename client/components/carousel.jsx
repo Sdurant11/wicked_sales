@@ -13,7 +13,7 @@ function CarouselHeader() {
         </div>
         <div className="carousel-item backgroundImage" style={{ backgroundImage: 'url("https://i.etsystatic.com/10351384/r/il/6619f6/1594264668/il_1588xN.1594264668_n8rq.jpg")', backgroundPosition: '50% 20%' }}>
         </div>
-        <div className="carousel-item backgroundImage" style={{ backgroundImage: 'url("https://www.darkbeautymag.com/wp-content/uploads/2014/02/Pages-from-ISSUE-29-Print-Full-5-1.jpg")', backgroundPosition: '50% 20%' }}>
+        <div className="carousel-item backgroundImage" style={{ backgroundImage: 'url("https://i.etsystatic.com/19186398/r/il/ac8581/1802384229/il_fullxfull.1802384229_98eq.jpg")', backgroundPosition: '0% 20%' }}>
         </div>
       </div>
       <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

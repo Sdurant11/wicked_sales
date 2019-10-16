@@ -1,27 +1,11 @@
 [
   {
-    "id": 1,
-    "name": "Crown of Thorns",
-    "price": 9000,
-    "image": "https://i.etsystatic.com/19437947/r/il/35bdf1/1982147181/il_1588xN.1982147181_78wp.jpg",
-    "shortDescription": "...",
-    "productType": "headWear"
-  },
-  {
-    "id": 2,
-    "name": "Halo Headpiece",
-    "price": 12000,
-    "image": "https://i.etsystatic.com/19437947/r/il/2678a9/1948529820/il_794xN.1948529820_5wni.jpg",
-    "shortDescription": "...",
-    "productType": "headWear"
-  },
-  {
-    "id": 3,
-    "name": "Red Wool Hooded Cloak",
-    "price": 2900,
-    "image": "https://i.etsystatic.com/5961957/r/il/080c6c/1893148038/il_794xN.1893148038_m2to.jpg",
-    "shortDescription": "...",
-    "productType": "clothing"
+    "id": 12,
+    "name": "Deer Antler Crown",
+    "price": 10000,
+    "image": "https://i.etsystatic.com/5575294/r/il/4010d9/1613116415/il_1588xN.1613116415_32t4.jpg",
+    "shortDescription": "This unique headpiece features hand-cast resin antlers and a sculpted rose on a lightweight helm. The inside is lined with faux leather for comfort. In the back there is an elastic strap, with a metal slide to adjust. This antler crown was designed to be worn comfortably for hours.",
+    "productType": "accessories"
   },
   {
     "id": 4,
@@ -32,10 +16,26 @@
     "productType": "accessories"
   },
   {
+    "id": 3,
+    "name": "Red Wool Hooded Cloak",
+    "price": 2900,
+    "image": "https://i.etsystatic.com/5961957/r/il/080c6c/1893148038/il_794xN.1893148038_m2to.jpg",
+    "shortDescription": "...",
+    "productType": "clothing"
+  },
+  {
     "id": 5,
     "name": "Dragon Horns",
     "price": 9900,
     "image": "https://i.etsystatic.com/5961957/r/il/10720a/1503275994/il_1588xN.1503275994_ahsv.jpg",
+    "shortDescription": "...",
+    "productType": "headWear"
+  },
+  {
+    "id": 2,
+    "name": "Custom Black Goat Horn Headdress",
+    "price": 12000,
+    "image": "/images/GoatHorns.jpg",
     "shortDescription": "...",
     "productType": "headWear"
   },
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "name": "Crow's Foot Necklace",
+    "name": "Crow's Claw Necklace",
     "price": 2800,
     "image": "https://i.etsystatic.com/10049532/r/il/398a77/1930981597/il_1588xN.1930981597_tngc.jpg",
     "shortDescription": "...",
@@ -62,5 +62,37 @@
     "image": "https://i.etsystatic.com/17954328/r/il/ac2923/1611740515/il_1588xN.1611740515_j7yu.jpg",
     "shortDescription": "...",
     "productType": "clothing"
+  },
+  {
+    "id": 9,
+    "name": "Resin Casted Skull Mask with Horns",
+    "price": 12000,
+    "image": "https://i.etsystatic.com/19186398/r/il/9666ab/1726144886/il_794xN.1726144886_1qtj.jpg",
+    "shortDescription": "...",
+    "productType": "accessories"
+  },
+  {
+    "id": 10,
+    "name": "Renaissance Witch Gown",
+    "price": 14500,
+    "image": "https://i.etsystatic.com/5364762/r/il/faf057/1747923820/il_1588xN.1747923820_2sky.jpg",
+    "shortDescription": "This unique and beautiful Medieval style gown is made from a stretchy crushed black velvet. Great for a costume party or themed Medieval or Renaissance style wedding.",
+    "productType": "clothing"
+  },
+  {
+    "id": 11,
+    "name": "Witches Alter Broomstick",
+    "price": 6000,
+    "image": "https://i.etsystatic.com/6797040/r/il/031e41/2030074172/il_1588xN.2030074172_6eqb.jpg",
+    "shortDescription": "This Delightful Witches Besom has been handmade using Lucky Heather. It has been bound with Twine and decorated with Black Agate Crystals, a Pentacle & Skull Charm and Crow Feathers with a beaded detail.",
+    "productType": "accessories"
+  },
+  {
+    "id": 1,
+    "name": "Crown of Thorns",
+    "price": 9000,
+    "image": "https://i.etsystatic.com/19437947/r/il/35bdf1/1982147181/il_1588xN.1982147181_78wp.jpg",
+    "shortDescription": "...",
+    "productType": "headWear"
   }
 ]

@@ -31,17 +31,17 @@ export default class ProductDetails extends React.Component {
       var shortDescription = productInfoObj.shortDescription;
       return (
         <React.Fragment>
-          <div className="container d-flex">
+          <div className="container d-flex itemDetailsContainer pb-5">
             <div>
               <img className="itemDetailsImage" src={image} alt="image of product" />
-              <button type="button" className="btn btn-success my-3" onClick={() => { this.context.addToCart(productInfoObj); }}>
-                  Add to Cart
-              </button>
             </div>
-            <div className="mx-5">
+            <div className="mx-2 mt-3 itemDetailsInfoContainer">
               <h2>{name}</h2>
               <div className="detailsText">{price}</div>
               <div className="detailsText">{shortDescription}</div>
+              <button type="button" className="btn btn-success my-3" onClick={() => { this.context.addToCart(productInfoObj); }}>
+                Add to Cart
+              </button>
             </div>
           </div>
         </React.Fragment>

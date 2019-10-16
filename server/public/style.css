@@ -73,12 +73,35 @@ body{
   background-size: cover;
 }
 
+.itemDetailsContainer{
+  max-width: 85%;
+}
+
 .itemDetailsImage{
-  width: 300px;
+  max-width: 50vw;
+  min-width: 350px;
   height: auto;
 }
+
+/* .itemDetailsInfoContainer{
+  width: 350px;
+  height: auto
+} */
 
 
 .pointer{
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+  .itemDetailsContainer{
+    flex-direction: column;
+  }
+  .itemDetailsImage{
+    width: 350px;
+    height: auto
+  }
+  .itemDetailsContainer{
+  max-width: 100%;
+}
 }
