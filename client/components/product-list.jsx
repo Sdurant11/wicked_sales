@@ -36,6 +36,7 @@ export default class ProductList extends React.Component {
         />
       </Link>
     );
+    newItems = newItems.slice(0, 9);
     return (
       <React.Fragment>
         <CarouselHeader />

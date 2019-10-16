@@ -26,16 +26,12 @@ body{
 
 .itemCard{
   width: 250px;
-  height: 350px;
+  height: 300px;
   cursor: pointer;
   border: none;
   background-color: rgb(208, 212, 213)
 }
 
-.itemCardFrame{
-  height: 100%;
-  position: absolute;
-}
 
 .overlay {
   position: absolute;
@@ -73,12 +69,35 @@ body{
   background-size: cover;
 }
 
+.itemDetailsContainer{
+  max-width: 85%;
+}
+
 .itemDetailsImage{
-  width: 300px;
+  max-width: 50vw;
+  min-width: 350px;
   height: auto;
 }
+
+/* .itemDetailsInfoContainer{
+  width: 350px;
+  height: auto
+} */
 
 
 .pointer{
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+  .itemDetailsContainer{
+    flex-direction: column;
+  }
+  .itemDetailsImage{
+    width: 350px;
+    height: auto
+  }
+  .itemDetailsContainer{
+  max-width: 100%;
+}
 }

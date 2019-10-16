@@ -83,32 +83,6 @@ export default class App extends React.Component {
     });
   }
 
-  renderView() {
-    var viewedPage;
-    if (this.state.view.name === 'catalog') {
-      viewedPage = <ProductList view={this.setView} />;
-    } else if (this.state.view.name === 'description') {
-      viewedPage = <ProductDetails view={this.setView} params={this.state.view.params} add={this.addToCart} />;
-    } else if (this.state.view.name === 'cart') {
-      viewedPage = <CartSummary view={this.setView} cartArray={this.state.cart} />;
-    } else if (this.state.view.name === 'checkout') {
-      viewedPage = <CheckoutForm onSubmit={this.placeOrder} view={this.setView}/>;
-    } else if (this.state.view.name === 'headWear') {
-      viewedPage = <HeadWearList view={this.setView} params={this.state.view.params} />;
-    } else if (this.state.view.name === 'clothing') {
-      viewedPage = <ClothingList view={this.setView} params={this.state.view.params} />;
-    } else if (this.state.view.name === 'accessories') {
-      viewedPage = <AccessoriesList view={this.setView} params={this.state.view.params} />;
-    }
-
-    return (
-      <React.Fragment>
-        <Header cart={this.state.cart} view={this.setView}/>
-        {viewedPage}
-      </React.Fragment>
-    );
-  }
-
   render() {
     var contextVal = {
       addToCart: this.addToCart,
