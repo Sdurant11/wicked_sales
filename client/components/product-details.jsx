@@ -12,6 +12,7 @@ export default class ProductDetails extends React.Component {
   componentDidMount() {
     fetch(`/api/products.php?id={this.props.match.params.id}`)
       .then(res => res.json())
+      .then(res => res.find(entry => entry['id'] === parseInt(this.props.match.params.id)))
       .then(res => {
         var productDetails = res;
         this.setState({ product: productDetails });
