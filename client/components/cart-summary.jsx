@@ -21,7 +21,7 @@ function CartSummaryItem(props) {
                 </div>
               </div>
             </div>
-            <div className="mx-auto my-auto">
+            <div className="mr-2 my-auto">
               <button type="button" className="btn btn-danger" onClick={() => { contextValue.removeFromCart(props.item); }}>Delete Item</button>
             </div>
           </React.Fragment>

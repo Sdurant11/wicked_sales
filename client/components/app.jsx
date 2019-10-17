@@ -67,7 +67,9 @@ export default class App extends React.Component {
 
   removeFromCart(item) {
     var removedItemIndex = this.state.cart.indexOf(item);
-    return removedItemIndex;
+    var cartArray = this.state.cart;
+    cartArray.splice(removedItemIndex, 1);
+    this.updateCart(cartArray);
   }
 
   placeOrder(customerInfo) {
