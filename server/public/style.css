@@ -11,6 +11,10 @@ body{
   font-size: 3rem;
 }
 
+.headerText{
+  font-size: 1.2rem
+}
+
 #cartNum{
   font-size: 1.5rem;
 }

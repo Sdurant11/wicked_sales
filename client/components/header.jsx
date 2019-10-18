@@ -31,17 +31,17 @@ const Header = props => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className="px-5 mx-auto my-auto pointer">
-              <Link style={textStyle} to="/headwear">
+              <Link style={textStyle} to="/headwear" className="headerText">
               Headwear
               </Link>
             </NavItem>
             <NavItem className="px-5 mx-auto my-auto pointer">
-              <Link style={textStyle} to="/accessories">
+              <Link style={textStyle} to="/accessories" className="headerText">
               Accessories
               </Link>
             </NavItem>
             <NavItem className="px-5 mx-auto my-auto pointer">
-              <Link style={textStyle} to="/clothing">
+              <Link style={textStyle} to="/clothing" className="headerText">
               Clothing
               </Link>
             </NavItem>
