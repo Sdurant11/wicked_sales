@@ -35,7 +35,7 @@ export default class ProductDetails extends React.Component {
             <div>
               <img className="itemDetailsImage" src={image} alt="image of product" />
             </div>
-            <div className="mx-2 mt-3 itemDetailsInfoContainer">
+            <div className="mt-3 itemDetailsInfoContainer">
               <h2>{name}</h2>
               <div className="detailsText">{price}</div>
               <div className="detailsText">{shortDescription}</div>

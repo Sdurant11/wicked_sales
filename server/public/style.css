@@ -66,6 +66,7 @@ body{
 
 .detailsText{
   font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
 }
 
 .backgroundImage{
@@ -83,10 +84,9 @@ body{
   height: auto;
 }
 
-/* .itemDetailsInfoContainer{
-  width: 350px;
-  height: auto
-} */
+.itemDetailsInfoContainer{
+  margin-left: 5%;
+}
 
 
 .pointer{
@@ -103,5 +103,8 @@ body{
   }
   .itemDetailsContainer{
   max-width: 100%;
+}
+.itemDetailsInfoContainer{
+  margin-left: 1%;
 }
 }
