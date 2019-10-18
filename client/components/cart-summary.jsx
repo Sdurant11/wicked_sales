@@ -6,19 +6,28 @@ function CartSummaryItem(props) {
   var price = props.item.price;
   price = '$' + (price / 100).toFixed(2);
   return (
-    <React.Fragment>
-      <div>
-        <img src={props.item.image} alt="item image" className="col itemImage mt-1"></img>
-      </div>
-      <div className="mx-auto">
-        <div className="font-weight-bold">
-          {props.item.name}
-          <div className="font-weight-light">
-            {price}
-          </div>
-        </div>
-      </div>
-    </React.Fragment>
+    <AppContext.Consumer>
+      {contextValue => {
+        return (
+          <React.Fragment>
+            <div>
+              <img src={props.item.image} alt="item image" className="col itemImage mt-1"></img>
+            </div>
+            <div className="mx-auto my-auto">
+              <div className="font-weight-bold">
+                {props.item.name}
+                <div className="font-weight-light">
+                  {price}
+                </div>
+                <div className="mr-2 my-auto">
+                  <button type="button" className="btn btn-danger" onClick={() => { contextValue.removeFromCart(props.item); }}>Delete Item</button>
+                </div>
+              </div>
+            </div>
+          </React.Fragment>
+        );
+      }}
+    </AppContext.Consumer>
   );
 }
 

@@ -24,6 +24,8 @@ export default class App extends React.Component {
     this.getCartItems = this.getCartItems.bind(this);
     this.addToCart = this.addToCart.bind(this);
     this.placeOrder = this.placeOrder.bind(this);
+    this.removeFromCart = this.removeFromCart.bind(this);
+    this.updateCart = this.updateCart.bind(this);
   }
 
   componentDidMount() {
@@ -59,6 +61,17 @@ export default class App extends React.Component {
       });
   }
 
+  updateCart(cartArray) {
+    this.setState({ cart: cartArray });
+  }
+
+  removeFromCart(item) {
+    var removedItemIndex = this.state.cart.indexOf(item);
+    var cartArray = this.state.cart;
+    cartArray.splice(removedItemIndex, 1);
+    this.updateCart(cartArray);
+  }
+
   placeOrder(customerInfo) {
     var customerInfoObj = {
       name: customerInfo.name,
@@ -87,7 +100,8 @@ export default class App extends React.Component {
     var contextVal = {
       addToCart: this.addToCart,
       cartArray: this.state.cart,
-      placeOrder: this.placeOrder
+      placeOrder: this.placeOrder,
+      removeFromCart: this.removeFromCart
     };
 
     return (
