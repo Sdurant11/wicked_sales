@@ -12,7 +12,7 @@
     "name": "Bat Wings",
     "price": 5000,
     "image": "https://i.etsystatic.com/5961957/r/il/63285e/1104805251/il_1588xN.1104805251_8mf4.jpg",
-    "shortDescription": "...",
+    "shortDescription": "These beautiful wings are made with printed fabric. They are soft and delicate. Transparent on the both sides, one lighter than the other. Inspired by real bat wings.",
     "productType": "accessories"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Red Wool Hooded Cloak",
     "price": 2900,
     "image": "https://i.etsystatic.com/5961957/r/il/080c6c/1893148038/il_794xN.1893148038_m2to.jpg",
-    "shortDescription": "...",
+    "shortDescription": "This cloak is made in high quality wool cloth in a beautiful red colour. Is very cozy and warm. It can be custom made at any size of train that you want, so is perfect for a fantasy or romanthic fairytale themed wedding or event. Closed in the front with a leather or vegan leather clasp with metallic closure.",
     "productType": "clothing"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Dragon Horns",
     "price": 9900,
     "image": "https://i.etsystatic.com/5961957/r/il/10720a/1503275994/il_1588xN.1503275994_ahsv.jpg",
-    "shortDescription": "...",
+    "shortDescription": "Dragon or devil horns for a cosplay or fantasy costume. They can be custom coloured, choose and option or write to me if you want more than one colour. They can be send unmounted and unpaintted.If you choose a colour option, they will be attached to a metal headband.",
     "productType": "headWear"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Custom Black Goat Horn Headdress",
     "price": 12000,
     "image": "/images/GoatHorns.jpg",
-    "shortDescription": "...",
+    "shortDescription": "A beautifully haunting custom headdress complete with hand casted goat horns, chains, and victorian metal detailing. This headdress is lightweight and comes with adjustable back of the head strapping to secure the piece to your custom fit.",
     "productType": "headWear"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Grey Witch Hat",
     "price": 2500,
     "image": "https://i.etsystatic.com/5961957/r/il/25a5c3/2011886528/il_1588xN.2011886528_phw3.jpg",
-    "shortDescription": "...",
+    "shortDescription": "Is made in woolen felt, very flexible and comfortable. It adapts to your head, fits for many sizes. 100% wool. Dry clean only. The length to the point is 34cm and the wing is around 12cm. All the colours are rustic and dark, very druidic and realistic.",
     "productType": "headWear"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Crow's Claw Necklace",
     "price": 2800,
     "image": "https://i.etsystatic.com/10049532/r/il/398a77/1930981597/il_1588xN.1930981597_tngc.jpg",
-    "shortDescription": "...",
+    "shortDescription": "Faux resin casted crow claw necklace, bound with wire with a loop. Hung on black string with a clasp fastening. Approx 8cm to 10cm.",
     "productType": "accessories"
   },
   {
@@ -73,10 +73,10 @@
   },
   {
     "id": 8,
-    "name": "Black Witch Dress",
+    "name": "Black Salem Witch Dress",
     "price": 4500,
     "image": "https://i.etsystatic.com/17954328/r/il/ac2923/1611740515/il_1588xN.1611740515_j7yu.jpg",
-    "shortDescription": "...",
+    "shortDescription": "The black dress is made of pure linen fabric, the style is inspired by colonial times. External seams (neck and sleeves) are made by hand. Custom made for you according to your individual size.",
     "productType": "clothing"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Resin Casted Skull Mask with Horns",
     "price": 12000,
     "image": "https://i.etsystatic.com/19186398/r/il/9666ab/1726144886/il_794xN.1726144886_1qtj.jpg",
-    "shortDescription": "...",
+    "shortDescription": "A beautifully hand casted resin mask. These gorgeous pieces come complete with hand casted goat horns and can be made in a number of colors and finishes. They are lightweight and are securely fastened by 2 interlocking neoprene back straps.",
     "productType": "accessories"
   },
   {
@@ -92,7 +92,7 @@
     "name": "Crown of Thorns",
     "price": 9000,
     "image": "https://i.etsystatic.com/19437947/r/il/35bdf1/1982147181/il_1588xN.1982147181_78wp.jpg",
-    "shortDescription": "...",
+    "shortDescription": "Macabre fantasy crown decorated with wooden skewers. The crown is worked so that it does not stick to the head. Each crown is custom made by hand. Small deviations from the picture are inevitable.",
     "productType": "headWear"
   }
 ]

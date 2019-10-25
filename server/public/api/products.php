@@ -1,21 +1,52 @@
 
   <?php
+  // require_once('functions.php');
+  // set_exception_handler('error_handler');
+  // startup();
 
-//  require_once('functions.php');
+  // require_once('db_connection.php');
 
-//  set_exception_handler ('error_handler');
+  // if (!$conn) {
+  //   throw new Exception('Connect Error: ' . mysqli_connect_error());
+  // }
 
-//  doStuff();
+  // if (empty($_GET['id'])) {
+  //   $whereClause = "";
+  // } else {
+  //   if (is_numeric($_GET['id'])) {
+  //     $whereClause = " WHERE id={$_GET['id']} ";
+  //   } else {
+  //     throw new Exception("Id needs to be a number");
+  //   }
+  // }
 
-// $output = file_get_contents('dummy-products-list.json');
+  // // $query = "SELECT * FROM `products`" . $whereClause;
 
-// print($output);
+  // // $result = mysqli_query($conn, $query);
 
-header('Content-Type: application/json');
+  // // if (!$result) {
+  // //   throw new Exception("Connect failed: ". mysqli_connect_error());
+  // // }
 
-if (empty($_GET['id'])) {
-  readfile('dummy-products-list.json');
-} else {
-  readfile('dummy-product-details.json');
-}
+  // // $output = [];
+
+  // // while ($row = $result->fetch_assoc()) {
+  // //   array_push($output, $row);
+  // // }
+
+  // // $json_output = (json_encode($output));
+  // // print($json_output);
+
+
+
+  // $output = file_get_contents('dummy-products-list.json');
+  // print($output);
+
+  header('Content-Type: application/json');
+  if (empty($_GET['id'])) {
+    readfile('dummy-products-list.json');
+  } else {
+    readfile('dummy-product-details.json');
+  }
+
 ?>
