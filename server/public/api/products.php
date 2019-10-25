@@ -8,7 +8,7 @@ startup();
 require_once('db_connection.php');
 
   if (!$conn) {
-    die('Connect Error: ' . mysqli_connect_error());
+    throw new Exception('Connect Error: ' . mysqli_connect_error());
   }
 
 if (empty($_GET['id'])) {
@@ -17,31 +17,31 @@ if (empty($_GET['id'])) {
     if (is_numeric($_GET['id']) ){
       $whereClause = " WHERE id={$_GET['id']} ";
     } else {
-      die("Id needs to be a number");
+      throw new Exception("Id needs to be a number");
     }
 }
 
-$query = "SELECT * FROM `products`" . $whereClause;
+// $query = "SELECT * FROM `products`" . $whereClause;
 
-$result = mysqli_query($conn, $query);
+// $result = mysqli_query($conn, $query);
 
-if (!$result) {
-  throw new Exception("Connect failed: ". mysqli_connect_error());
-}
+// if (!$result) {
+//   throw new Exception("Connect failed: ". mysqli_connect_error());
+// }
 
-$output = [];
+// $output = [];
 
-while ($row = $result->fetch_assoc()) {
-  array_push($output, $row);
-}
+// while ($row = $result->fetch_assoc()) {
+//   array_push($output, $row);
+// }
 
-$json_output = (json_encode($output));
-print($json_output);
-
-
+// $json_output = (json_encode($output));
+// print($json_output);
 
 
-// $output = file_get_contents('dummy-products-list.json');
-// print($output);
+
+doStuff();
+$output = file_get_contents('dummy-products-list.json');
+print($output);
 
 ?>
