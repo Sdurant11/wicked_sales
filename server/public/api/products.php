@@ -1,21 +1,49 @@
 
-  <?php
+<?php
 
-//  require_once('functions.php');
 
-//  set_exception_handler ('error_handler');
+require_once('functions.php');
+set_exception_handler('error_handler');
+startup();
 
-//  doStuff();
+require_once('db_connection.php');
 
-// $output = file_get_contents('dummy-products-list.json');
-
-// print($output);
-
-header('Content-Type: application/json');
+  if (!$conn) {
+    throw new Exception('Connect Error: ' . mysqli_connect_error());
+  }
 
 if (empty($_GET['id'])) {
-  readfile('dummy-products-list.json');
+  $whereClause = "";
 } else {
-  readfile('dummy-product-details.json');
+    if (is_numeric($_GET['id']) ){
+      $whereClause = " WHERE id={$_GET['id']} ";
+    } else {
+      throw new Exception("Id needs to be a number");
+    }
 }
+
+// $query = "SELECT * FROM `products`" . $whereClause;
+
+// $result = mysqli_query($conn, $query);
+
+// if (!$result) {
+//   throw new Exception("Connect failed: ". mysqli_connect_error());
+// }
+
+// $output = [];
+
+// while ($row = $result->fetch_assoc()) {
+//   array_push($output, $row);
+// }
+
+// $json_output = (json_encode($output));
+// print($json_output);
+
+
+
+doStuff();
+$output = file_get_contents('dummy-products-list.json');
+print($output);
+
+
 ?>
