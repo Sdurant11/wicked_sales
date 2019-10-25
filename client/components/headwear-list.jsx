@@ -1,9 +1,9 @@
 import React from 'react';
 import ProductListItem from './product-list-item';
-import CarouselHeader from './carousel.jsx';
 import { Link } from 'react-router-dom';
 
-export default class ProductList extends React.Component {
+export default class HeadWearList extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -19,15 +19,14 @@ export default class ProductList extends React.Component {
   getProducts() {
     fetch('/api/products.php')
       .then(res => { return res.json(); })
-      .then(res => {
-        this.setState({ products: res });
-      });
+      .then(res => { this.setState({ products: res }); });
   }
 
   render() {
-    var newItems = this.state.products.map(product =>
-      <Link to={`/products/${product.id}`}
-        key={product.id} className='col-md-4 d-flex align-items-stretch'>
+    const headWearItems = this.state.products.filter(item => item.productType === 'headWear');
+    const headWearCards = headWearItems.map(product =>
+      <Link to={`/products/${product.id}`} key={product.id}
+        className='col-md-4 d-flex align-items-stretch'>
         <ProductListItem
           name={product.name}
           price={product.price}
@@ -36,19 +35,19 @@ export default class ProductList extends React.Component {
         />
       </Link>
     );
-    newItems = newItems.slice(0, 9);
+
     return (
       <React.Fragment>
-        <CarouselHeader />
         <div className="container">
-          <div className='row mt-5'>
-            <h2 className="mx-auto">Featured Items</h2>
+          <div className="row">
+            <h2 className="mx-auto">Headwear</h2>
           </div>
-          <div className= 'row mt-5'>
-            {newItems}
+          <div className='row mt-5'>
+            {headWearCards}
           </div>
         </div>
       </React.Fragment>
     );
   }
+
 }

@@ -1,8 +1,98 @@
-{
-  "id": 1,
-  "name": "Shake Weight",
-  "price": 2999,
-  "image": "https://bit.ly/2JtVNE6",
-  "shortDescription": "Dynamic Inertia technology ignites muscles in arms, shoulders, and chest.",
-  "longDescription": "Shaking up the way you work out, the Shake Weight is a revolution in strength training. Boasting a legion of devotees who enthusiastically confirm the Shake Weight's claim that it shapes and tones the upper body, this product is hard to ignore.\nThe way it works is this: a special pulsating dumbbell with dynamic inertia technology increases upper body muscle activity by 300 percent compared to traditional weights as you shake the 5-lb weight several different ways. This repetitive shaking stimulates muscle toning and adds shape to your upper arms, chest, and shoulders.\nThe Upper Body Sculpting DVD shows you the proper way to use the Shake Weight so you see the most benefits. It works in only six minutes a day, though if you use it more often, you're likely to see results sooner."
-}
+[
+  {
+    "id": 1,
+    "name": "Crown of Thorns",
+    "price": 2999,
+    "image": "https://i.etsystatic.com/19437947/r/il/35bdf1/1982147181/il_1588xN.1982147181_78wp.jpg",
+    "shortDescription": "Macabre fantasy crown decorated with wooden skewers. The crown is worked so that it does not stick to the head. Each crown is custom made by hand. Small deviations from the picture are inevitable",
+    "longDescription": "..."
+  },
+  {
+    "id": 2,
+    "name": "Custom Black Goat Horn Headdress",
+    "price": 12000,
+    "image": "/images/GoatHorns.jpg",
+    "shortDescription": "A beautifully haunting custom headdress complete with hand casted goat horns, chains, and victorian metal detailing. This headdress is lightweight and comes with adjustable back of the head strapping to secure the piece to your custom fit.",
+    "longDescription": "..."
+  },
+  {
+    "id": 3,
+    "name": "Red Wool Hooded Cloak",
+    "price": 2900,
+    "image": "https://i.etsystatic.com/5961957/r/il/080c6c/1893148038/il_794xN.1893148038_m2to.jpg",
+    "shortDescription": "This cloak is made in high quality wool cloth in a beautiful red colour. Is very cozy and warm. It can be custom made at any size of train that you want, so is perfect for a fantasy or romanthic fairytale themed wedding or event. Closed in the front with a leather or vegan leather clasp with metallic closure.",
+    "longDescription": "..."
+  },
+  {
+    "id": 4,
+    "name": "Bat Wings",
+    "price": 5000,
+    "image": "https://i.etsystatic.com/5961957/r/il/63285e/1104805251/il_1588xN.1104805251_8mf4.jpg",
+    "shortDescription": "These beautiful wings are made with printed fabric. They are soft and delicate. Transparent on the both sides, one lighter than the other. Inspired by real bat wings.",
+    "productType": "accessories"
+  },
+  {
+    "id": 5,
+    "name": "Dragon Horns",
+    "price": 9900,
+    "image": "https://i.etsystatic.com/5961957/r/il/10720a/1503275994/il_1588xN.1503275994_ahsv.jpg",
+    "shortDescription": "Dragon or devil horns for a cosplay or fantasy costume. They can be custom coloured, choose and option or write to me if you want more than one colour. They can be send unmounted and unpaintted.If you choose a colour option, they will be attached to a metal headband.",
+    "productType": "headWear"
+  },
+  {
+    "id": 6,
+    "name": "Grey Witch Hat",
+    "price": 2500,
+    "image": "https://i.etsystatic.com/5961957/r/il/25a5c3/2011886528/il_1588xN.2011886528_phw3.jpg",
+    "shortDescription": "Is made in woolen felt, very flexible and comfortable. It adapts to your head, fits for many sizes. 100% wool. Dry clean only. The length to the point is 34cm and the wing is around 12cm. All the colours are rustic and dark, very druidic and realistic.",
+    "productType": "headWear"
+  },
+  {
+    "id": 7,
+    "name": "Crow's Claw Necklace",
+    "price": 2800,
+    "image": "https://i.etsystatic.com/10049532/r/il/398a77/1930981597/il_1588xN.1930981597_tngc.jpg",
+    "shortDescription": "Faux resin casted crow claw necklace, bound with wire with a loop. Hung on black string with a clasp fastening. Approx 8cm to 10cm.",
+    "productType": "accessories"
+  },
+  {
+    "id": 8,
+    "name": "Black Salem Witch Dress",
+    "price": 4500,
+    "image": "https://i.etsystatic.com/17954328/r/il/ac2923/1611740515/il_1588xN.1611740515_j7yu.jpg",
+    "shortDescription": "The black dress is made of pure linen fabric, the style is inspired by colonial times. External seams (neck and sleeves) are made by hand. Custom made for you according to your individual size.",
+    "productType": "clothing"
+  },
+  {
+    "id": 9,
+    "name": "Resin Casted Skull Mask with Horns",
+    "price": 12000,
+    "image": "https://i.etsystatic.com/19186398/r/il/9666ab/1726144886/il_794xN.1726144886_1qtj.jpg",
+    "shortDescription": "A beautifully hand casted resin mask. These gorgeous pieces come complete with hand casted goat horns and can be made in a number of colors and finishes. They are lightweight and are securely fastened by 2 interlocking neoprene back straps.",
+    "productType": "accessories"
+  },
+  {
+    "id": 10,
+    "name": "Renaissance Witch Gown",
+    "price": 14500,
+    "image": "https://i.etsystatic.com/5364762/r/il/faf057/1747923820/il_1588xN.1747923820_2sky.jpg",
+    "shortDescription": "This unique and beautiful Medieval style gown is made from a stretchy crushed black velvet. Great for a costume party or themed Medieval or Renaissance style wedding.",
+    "productType": "clothing"
+  },
+  {
+    "id": 11,
+    "name": "Witches Alter Broomstick",
+    "price": 6000,
+    "image": "https://i.etsystatic.com/6797040/r/il/031e41/2030074172/il_1588xN.2030074172_6eqb.jpg",
+    "shortDescription": "This Delightful Witches Besom has been handmade using Lucky Heather. It has been bound with Twine and decorated with Black Agate Crystals, a Pentacle & Skull Charm and Crow Feathers with a beaded detail.",
+    "productType": "accessories"
+  },
+  {
+    "id": 12,
+    "name": "Deer Antler Crown",
+    "price": 10000,
+    "image": "https://i.etsystatic.com/5575294/r/il/4010d9/1613116415/il_1588xN.1613116415_32t4.jpg",
+    "shortDescription": "This unique headpiece features hand-cast resin antlers and a sculpted rose on a lightweight helm. The inside is lined with faux leather for comfort. In the back there is an elastic strap, with a metal slide to adjust. This antler crown was designed to be worn comfortably for hours.",
+    "productType": "accessories"
+  }
+]

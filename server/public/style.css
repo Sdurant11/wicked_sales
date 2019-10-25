@@ -1,0 +1,110 @@
+body{
+  font-family: 'IM Fell DW Pica', serif;
+  background-color: rgb(208, 212, 213)
+}
+
+.fa-shopping-cart:before{
+  font-size: 20px;
+}
+
+#title{
+  font-size: 3rem;
+}
+
+.headerText{
+  font-size: 1.2rem
+}
+
+#cartNum{
+  font-size: 1.5rem;
+}
+
+.cartItemRow{
+  height: 20vh;
+}
+
+.itemImage{
+  height: 18vh;
+  width: auto;
+}
+
+.itemCard{
+  width: 300px;
+  height: 350px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(208, 212, 213)
+}
+
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(120, 127, 129);
+}
+
+.itemCard:hover .overlay {
+  opacity: .7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1
+}
+
+.detailsText{
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+}
+
+.backgroundImage{
+  height:85vh;
+  background-size: cover;
+}
+
+.itemDetailsContainer{
+  max-width: 85%;
+}
+
+.itemDetailsImage{
+  max-width: 50vw;
+  min-width: 350px;
+  height: auto;
+}
+
+.itemDetailsInfoContainer{
+  margin-left: 5%;
+}
+
+
+.pointer{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+  .itemDetailsContainer{
+    flex-direction: column;
+  }
+  .itemDetailsImage{
+    width: 350px;
+    height: auto
+  }
+  .itemDetailsContainer{
+  max-width: 100%;
+}
+.itemDetailsInfoContainer{
+  margin-left: 1%;
+}
+}
